@@ -17,10 +17,10 @@ System.out.println("Cuando cumplas años tendrás " + p.edad);
 System.out.println("¿Cuánto has crecido?");
 double incremento = new Scanner(System.in).nextDouble();
 p.crecer(incremento);
-//para impromir solo dos decimales 
-System.out.printf("Tu estatura ahora es %.2f", p.estatura);
+System.out.printf("Tu estatura ahora es %.2f", p.estatura);//para impromir solo dos decimales 
+Personas a=new Personas("Pepe", 20, 1.9);
 
-
+System.out.println(a.nombre + " " + a.edad + " " + a.estatura);
 		
 	}
 

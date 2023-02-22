@@ -14,9 +14,18 @@ public class Personas {
 	public void cumplirAnios() {
 		edad++;
 	}
-
 	public void crecer(double incremento) {
 	estatura+=	incremento;
+	}
+	public Personas(String nombre) {
+		this.nombre = nombre;
+	}
+	public Personas(String nombre, int edad, double estatura) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.estatura = estatura;
+	}
+	public Personas() {
 	}
 
 }

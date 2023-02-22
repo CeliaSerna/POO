@@ -15,12 +15,19 @@ public class Main {
 		miAnimal.edad=4;
 		miAnimal.mostrarCaracteristicas(miAnimal.nombre, miAnimal.edad, Animales.id);
 		
+		
+		
 		//id=2
 		Animales miMascota=new Animales();
 		miMascota.nombre="Sape";
 		miMascota.edad=3;
+		
 		miMascota.mostrarCaracteristicas(miMascota.nombre, miMascota.edad, miMascota.id);
-		mostrarMenu();
+		//mostrarMenu();
+		//llamar al metodo constructor de solo el nombre
+		Animales miMascota2= new Animales("Candela");
+		Animales miMascota3= new Animales("Candela2", 13);
+		System.out.println("El id de" + miMascota3.nombre + " es "+ Animales.id);
 	}
 
 }
