@@ -1,11 +1,9 @@
 package primerPOO;
 
-import segundoPOO.Personas;
-
 import static iu.MiMenu.*;//con el * importamos todos los metodos dentro de la clase
 
 public class Main {
-	@SuppressWarnings("static-access")//suprime las advertencias
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -15,7 +13,7 @@ public class Main {
 		//id=1
 		miAnimal.nombre="Thor";
 		miAnimal.edad=4;
-		miAnimal.mostrarCaracteristicas(miAnimal.nombre, miAnimal.edad, miAnimal.id);
+		miAnimal.mostrarCaracteristicas(miAnimal.nombre, miAnimal.edad, Animales.id);
 		
 		//id=2
 		Animales miMascota=new Animales();
