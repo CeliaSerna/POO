@@ -4,7 +4,7 @@ public class Animales {
 
 	//atributos
 	String nombre;
-	int id;
+	static int id=0; //se le pone static para que incremente
 	int edad;
 	
 	//métodos
@@ -14,7 +14,10 @@ public class Animales {
 	
 	public void mostrarCaracteristicas(String nombre1, int edad1, int id1) {
 	System.out.println("Mi animal se llama " + nombre1 + ", tiene "+ edad1+" años y su ID es "+ id1 +".");
-}
-
+	}
+	
+	public Animales() {//es un metodo constructor
+		id++;
+	}
 	
 }
